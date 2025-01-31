@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instructions to Read Mail</title>
+    <title>Email Conversation - Project Update</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -21,50 +21,97 @@
         }
         .container {
             padding: 20px;
+            text-align: left;
         }
-        .instruction-list {
-            list-style-type: none;
-            padding: 0;
-        }
-        .instruction-list li {
+        .email {
             background-color: #fff;
-            margin: 10px 0;
+            margin: 20px 0;
             padding: 15px;
             border: 1px solid #ddd;
             border-radius: 5px;
         }
-        .btn {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
+        .email-header {
             font-weight: bold;
-            margin-top: 20px;
-            display: inline-block;
+            color: #4CAF50;
         }
-        .btn:hover {
-            background-color: #45a049;
+        .email-subject {
+            font-style: italic;
+            color: #888;
+        }
+        .email-content {
+            margin-top: 10px;
+        }
+        .email-footer {
+            font-size: 12px;
+            color: #aaa;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Instructions to Read Your Email</h1>
+    <h1>Email Conversation: Project Update</h1>
 </header>
 
 <div class="container">
-    <p>Follow the steps below to access and read your emails:</p>
-    <ul class="instruction-list">
-        <li>1. Open your email client or webmail service (like Gmail, Outlook, etc.).</li>
-        <li>2. Log in with your username and password.</li>
-        <li>3. Once logged in, navigate to your inbox.</li>
-        <li>4. Click on the email you want to read.</li>
-        <li>5. Read the contents of the email.</li>
-        <li>6. Reply, forward, or archive the email as needed.</li>
-    </ul>
-    <a href="https://mail.google.com" class="btn" target="_blank">Go to Gmail</a>
+    <!-- Email 1 (Manager to Contractor) -->
+    <div class="email">
+        <div class="email-header">
+            <span><strong>From:</strong> Manager (manager@company.com)</span> <br>
+            <span><strong>To:</strong> Contractor (contractor@contractor.com)</span> <br>
+            <span class="email-subject">Subject: Project Update Request</span>
+        </div>
+        <div class="email-content">
+            <p>Hi Contractor,</p>
+            <p>I hope you're doing well. I wanted to check in and get an update on the current status of the project. Could you please send me the latest details, including any potential roadblocks?</p>
+            <p>Looking forward to your response!</p>
+            <p>Best,</p>
+            <p>Manager</p>
+        </div>
+        <div class="email-footer">
+            <small>Sent on: 1st February 2025</small>
+        </div>
+    </div>
+
+    <!-- Email 2 (Contractor to Manager) -->
+    <div class="email">
+        <div class="email-header">
+            <span><strong>From:</strong> Contractor (contractor@contractor.com)</span> <br>
+            <span><strong>To:</strong> Manager (manager@company.com)</span> <br>
+            <span class="email-subject">Subject: RE: Project Update Request</span>
+        </div>
+        <div class="email-content">
+            <p>Hi Manager,</p>
+            <p>Thank you for reaching out. The project is progressing well. We are on track to complete the first phase by the end of this week. The main task currently being worked on is integrating the new features into the system.</p>
+            <p>However, there are a few issues with the software integration that I’ve been troubleshooting. I'll need an additional 2 days to resolve the remaining bugs, but I expect no further delays beyond that.</p>
+            <p>Let me know if you need any more details. I’ll keep you updated as I make progress.</p>
+            <p>Best regards,</p>
+            <p>Contractor</p>
+        </div>
+        <div class="email-footer">
+            <small>Sent on: 2nd February 2025</small>
+        </div>
+    </div>
+
+    <!-- Email 3 (Manager to Contractor) -->
+    <div class="email">
+        <div class="email-header">
+            <span><strong>From:</strong> Manager (manager@company.com)</span> <br>
+            <span><strong>To:</strong> Contractor (contractor@contractor.com)</span> <br>
+            <span class="email-subject">Subject: RE: RE: Project Update Request</span>
+        </div>
+        <div class="email-content">
+            <p>Hi Contractor,</p>
+            <p>Thanks for the update. It’s good to hear that the project is on track, despite the integration issue. Please keep me posted if there are any other blockers along the way, and feel free to reach out if you need additional support from my side to get past the bugs.</p>
+            <p>Looking forward to hearing back from you once the integration is resolved!</p>
+            <p>Best,</p>
+            <p>Manager</p>
+        </div>
+        <div class="email-footer">
+            <small>Sent on: 3rd February 2025</small>
+        </div>
+    </div>
 </div>
 
 </body>
